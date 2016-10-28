@@ -7,11 +7,13 @@ Rails.application.routes.draw do
   
   get "/user/new"=>"users#new",as: :user_new
   post "/user/new"=>"users#create",as: :user_create
-  get "/user/list"=>"users#index", as: :user_list
+  get "/users/list"=>"users#index", as: :user_list
   get "/user/:id/edit"=>"users#edit", as: :user_edit
    put "user/:id/edit"=>"users#update",as: :user_update
    delete "/user/:id"=>"usres#destroy",as: :user_destroy
    get "/user/:id/show"=>"users#show",as: :user_show
+    get "/projects/list"=>"projecst#index", as: :projects_list
+
 
   #resources :users
 
