@@ -1,0 +1,23 @@
+<h1>Listing account_history</h1>
+ 
+<table>
+  <tr>
+    <th>ah_id</th>
+    <th>account_id</th>
+
+  </tr>
+ 
+  <% @account_histories.each do |account_history| %>
+    <tr>
+      <td><%= account_history.ah_id %></td>
+      <td><%= account_history.account_id %></td>
+      
+
+      <!-- these tow lines are included whenever we want to perfoms a destroy operation -->
+      
+      
+      </tr>
+
+      
+  <% end %>
+</table>

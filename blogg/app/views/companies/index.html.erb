@@ -1,0 +1,20 @@
+<h1>Listing companies</h1>
+ 
+<table>
+  <tr>
+    <th>name</th>
+    <th>city</th>
+    
+  </tr>
+ 
+  <% @companies.each do |companie| %>
+    <tr>
+      <td><%= companie.name %></td>
+      <td><%= companie.city%></td>
+      <td><%= link_to 'list_empolyees', company_employees_path(companie) %></td>
+       <td><%= link_to 'create_empolyees', new_company_employee_path(companie) %></td>
+
+
+
+      <% end %>
+</table>

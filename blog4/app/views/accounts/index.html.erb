@@ -1,0 +1,26 @@
+<h1>Listing account</h1>
+ 
+<table>
+  <tr>
+    <th>ac_id</th>
+    <th>ac_number</th>
+<th>supplier_id</th>
+    
+  </tr>
+ 
+  <% @accounts.each do |account| %>
+    <tr>
+      <td><%= account.ac_id %></td>
+      <td><%= account.ac_number %></td>
+      <td><%= account.supplier_id %></td>
+      
+
+
+      <!-- these tow lines are included whenever we want to perfoms a destroy operation -->
+      
+      
+      </tr>
+
+      
+  <% end %>
+</table>

@@ -1,0 +1,25 @@
+<h1>Listing agent</h1>
+ 
+<table>
+  <tr>
+    <th>name</th>
+    <th>agent_id</th>
+    
+  </tr>
+ 
+  <% @agents.each do |agent| %>
+    <tr>
+      <td><%= agent.name %></td>
+      <td><%= agent.agent_id %></td>
+      
+      
+
+
+      <!-- these tow lines are included whenever we want to perfoms a destroy operation -->
+      
+      
+      </tr>
+
+      
+  <% end %>
+</table>

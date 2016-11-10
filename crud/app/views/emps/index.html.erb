@@ -1,0 +1,30 @@
+<h1>Listing emps</h1>
+ 
+<table>
+  <tr>
+    <th>name</th>
+    <th>e_id</th>
+    <th>designation</th>
+  </tr>
+ 
+  <% @emps.each do |emp| %>
+    <tr>
+      <td><%= emp.name %></td>
+      <td><%= emp.e_id %></td>
+      <td><%= emp.designation %></td>
+
+
+      <!-- these tow lines are included whenever we want to perfoms a destroy operation -->
+
+ <td><%= link_to 'show', emp_show_path(emp) %></td>
+
+      <td><%= link_to 'Edit', emp_edit_path(emp) %></td>
+
+
+
+      <td><%= link_to 'Destroy', emp_destroy_path(emp),method: :delete,data: { confirm:'are you sure?'} %></td>
+      </tr>
+
+      
+  <% end %>
+</table>

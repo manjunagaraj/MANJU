@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crud</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+
+ <!-- <div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Title</a>
+    <ul class="nav">
+      <li class="active"><a href=emps_list>Home</a></li>
+      <li><a href=emp_new>Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </div>
+</div>
+ -->
+
+
+ <header class="navbar navbar-fixed-top navbar-inverse">
+     <div class="navbar-inner">
+       <div class="container">
+         <%= link_to "Social", '#', id: "logo" %>
+         <nav>
+           <ul class="nav pull-right">
+             <li><a href=emp_show_path>Link</a></li>
+             <li><%= link_to "Help",    emp_new_path %></li>
+             <li><%= link_to "Sign in", emp_new_path %></li>
+           </ul>
+         </nav>
+       </div>
+     </div>
+   </header>
+   <div class="container">
+     <%= yield %>
+   </div>
+
+
+</body>
+</html>

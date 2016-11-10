@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  programer_id: 1
+  client_id: 1
+  pj_id: 1
+
+two:
+  programer_id: 1
+  client_id: 1
+  pj_id: 1

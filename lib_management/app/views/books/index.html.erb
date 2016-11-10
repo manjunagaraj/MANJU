@@ -1,0 +1,25 @@
+<h1>Listing books</h1>
+ 
+<table>
+  <tr>
+    <th>book_name</th>
+    <th>author</th>
+    <th>publication</th>
+  </tr>
+ 
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.book_name %></td>
+      <td><%= book.author %></td>
+      <td><%= book.publication %></td>
+
+
+      <!-- these tow lines are included whenever we want to perfoms a destroy operation -->
+      <td><%= link_to 'show', book_show_path(book) %></td>
+      <td><%= link_to 'Edit', book_edit_path(book) %></td>
+      <td><%= link_to 'Destroy', book_destroy_path(book),method: :delete,data: { confirm:'are you sure?'} %></td>
+      </tr>
+
+      
+  <% end %>
+</table>

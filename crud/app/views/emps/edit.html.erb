@@ -1,0 +1,22 @@
+<h1>Editing emp</h1>
+ 
+<%= form_for :emp, url: emp_edit_path(@emp), method: :put do |f| %>
+ 
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :e_id%><br>
+    <%= f.text_area :e_id %>
+  </p>
+  <p>
+    <%= f.label :designation %><br>
+    <%= f.text_area :designation %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+ 
+<% end %>
+ 

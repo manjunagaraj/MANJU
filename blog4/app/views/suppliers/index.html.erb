@@ -1,0 +1,24 @@
+<h1>Listing supplier</h1>
+ 
+<table>
+  <tr>
+    <th>name</th>
+    <th>s_id</th>
+    
+  </tr>
+ 
+  <% @suppliers.each do |supplier| %>
+    <tr>
+      <td><%= supplier.name %></td>
+      <td><%= supplier.s_id %></td>
+      
+
+
+      <!-- these tow lines are included whenever we want to perfoms a destroy operation -->
+      
+      
+      </tr>
+
+      
+  <% end %>
+</table>
